@@ -54,6 +54,3 @@ L’analyse met en évidence des liens forts entre certaines variables démograp
 - `rapport_analyse_ventes.css` : style du rapport
 - `generate_rapport_pdf.py` : script pour générer un PDF du rapport
 - `p4_notebook01.ipynb`, etc. : notebooks d’analyse
-
-## Auteur
-Projet réalisé par [Votre Nom].
