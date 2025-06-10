@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapport d’Analyse Globale des Ventes</title>
+    <link rel="stylesheet" href="rapport_analyse_ventes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rapport d’Analyse Globale des Ventes</h1>
+        <section>
+            <h2>Introduction</h2>
+            <p>Ce rapport présente une analyse exploratoire des données de ventes, réalisée à partir des fichiers clients, transactions et produits. L’objectif est de mieux comprendre les comportements d’achat, les corrélations entre variables et d’identifier des axes d’amélioration pour le business.</p>
+        </section>
+        <section>
+            <h2>Méthodologie</h2>
+            <p>Les analyses ont été menées à l’aide de Python (pandas, seaborn, matplotlib, scipy) sur trois sources principales : <b>customers.csv</b>, <b>transactions.csv</b>, <b>products.csv</b>. Les données ont été jointes et enrichies pour permettre des analyses croisées.</p>
+        </section>
+        <section>
+            <h2>Analyses et Résultats</h2>
+            <ul>
+                <li>Sexe des clients et catégories de produits achetés : corrélation significative (test du Chi2).</li>
+                <li>Âge des clients et montant total des achats : corrélation négative forte.</li>
+                <li>Âge des clients et fréquence d’achat : corrélation selon les groupes d’âge.</li>
+                <li>Âge des clients et taille du panier moyen : variations selon les tranches d’âge.</li>
+                <li>Âge des clients et catégories de produits : préférences selon les classes d’âge.</li>
+            </ul>
+            <div class="images">
+                <img src="p4_graphic/heatmap_global.png" alt="Heatmap global">
+                <img src="p4_graphic/heatmap_sexe_categories.png" alt="Heatmap sexe/catégories">
+            </div>
+        </section>
+        <section>
+            <h2>Visualisations</h2>
+            <p>Des graphiques (heatmaps, scatterplots, barplots) ont été générés pour illustrer la répartition des catégories de produits selon le sexe et l’âge, les corrélations entre variables numériques, et l’évolution des ventes selon l’âge.</p>
+            <div class="images">
+                <img src="p4_graphic/scatterplot_montant_achat_age_client.png" alt="Scatterplot montant/âge">
+                <img src="p4_graphic/scatterplot_frequence_achat_age_client.png" alt="Scatterplot fréquence/âge">
+                <img src="p4_graphic/scatterplot_panier_moyen_age_client.png" alt="Scatterplot panier/âge">
+                <img src="p4_graphic/scatterplot_panier_moyen_age_client_clusters.png" alt="Scatterplot panier/âge clusters">
+                <img src="p4_graphic/barplot_categorie_produit_age_client.png" alt="Barplot catégorie/âge">
+            </div>
+        </section>
+        <section>
+            <h2>Conclusions</h2>
+            <p>L’analyse exploratoire met en évidence des liens forts entre certaines variables démographiques et les comportements d’achat, l’importance de segmenter la clientèle, et des pistes pour approfondir l’analyse.</p>
+        </section>
+        <section>
+            <h2>Recommandations</h2>
+            <ul>
+                <li>Approfondir l’analyse sur l’acquisition client et les canaux de vente</li>
+                <li>Adapter les campagnes marketing selon les segments identifiés</li>
+                <li>Continuer à enrichir la base de données pour affiner les analyses</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
